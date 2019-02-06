@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nobel Prizes in something</title>
+  <link rel="stylesheet" href="prizes.css"> 
+  <!-- Student edition, for homework purposes -->
+</head>
+
+<body>
+  <main>
+    <h1>Nobel Prizes in {{topic}} </h1>
+      <h2>From {{beg}} to {{end}} </h2>
+      <nav>
+          <p> Other categories: 
+            {% for n in catDates%}
+            <a href="./{{n.fname}}">{{n.topic}}</a>
+            {% endfor %}
+            
+<!-- Links to other pages. Generate these from data passed in -->
+          </p>
+      </nav>
+<table>
+    <thead><tr>
+      
+        <th>Year:</th> 
+        <th>Name</th> 
+        <th>Accomplishment</th>
+      
+        </tr></thead>
+    <tbody>
+        {% for x in data %}
+        <tr>
+        
+        {% for y in x.lau %}
+        <td> {{x.yea}} </td>
+        <td> {{y.firstname}}{{y.surname}} </td>
+        <td>{{y.motivation}}</td>
+        </tr>
+        {% endfor %}
+      
+       {% endfor %}
+<!-- Generate the table here. -->
+    </tbody>
+      </table>
+  </main>
+</body>
+
+</html>

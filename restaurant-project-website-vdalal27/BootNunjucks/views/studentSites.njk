@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Student Sites</title>
+  </head>
+
+<body>
+  <main class="container">
+
+      <div class="row">
+          <div class="col-2 drB">
+              <h3>Students</h3>
+      <nav>
+          <ul class="nav flex-column">
+              {% for student in students %}
+              <li class="nav-item">
+                  <a class="nav-link" href="http://csweb01.csueastbay.edu/~{{student.Username}}" data-toggle="tooltip" title="{{student["First Name"]}} {{student["Last Name"]}}">{{student.Username}}</a>
+              </li>
+              {% endfor %}
+          </ul>
+
+      </nav>
+          </div>
+          <div class="col-10">
+              <h3 id="StudentName"></h3>
+              <iframe id="StudentSite"
+    src="http://csweb01.csueastbay.edu/~qd7373">
+</iframe>
+          </div>
+      </div>
+
+  </main>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.bundle.js" ></script>
+    <script>
+        nav = document.querySelector("nav");
+        nav.addEventListener('click', clickHandler);
+        iframe = document.querySelector("iframe");
+        sName = document.querySelector("#StudentName");
+        
+        function clickHandler(event) {
+            event.preventDefault();
+            console.log(event.target);
+            console.log(event.target.href);
+            iframe.src = event.target.href;
+            sName.innerHTML = event.target.innerHTML;
+        }
+        
+        // Setup Bootstrap tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip({container: "body"})
+        });
+    </script>
+</body>
+    <style>
+        iframe {height: 90vh;
+                width: 100%;}
+        .drB {height: 90vh;
+            overflow-y: auto;
+}
+        
+    </style>
+
+</html>

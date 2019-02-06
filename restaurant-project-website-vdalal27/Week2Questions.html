@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Questions and Answers for Week 2</title>
+ 
+  <style>
+  h1 {
+    font-family:sans-serif;
+    text-align: center;
+  }
+  main {
+    margin: 2em;
+    border: purple 20px solid;
+    padding: 1em;
+    background-color: white;
+  }
+  body {
+      background-color: #cde2f5;
+  }
+  img {
+    border-radius: 8px;
+    width: 280px;
+    height: 280px;
+}
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <header><h1>Week #2 Questions and Answers</h1></header>
+    <section>
+      <header><h2>Question 1</h2></header>
+      <section class="question">
+        <p><b>JavaScript practice with simple loops: Write JavaScript code in your browsers developer tool console to produce a list of squares and cubes for numbers from 1 to 10. Take a screen capture showing the code and result. Include this screen shot as an image to answer this question.</b></p>
+      </section>
+      <section class="answer">
+        <img src="ans1-1.png" alt="answer 1"><img src="ans1-2.png" alt="answer 1 part2"><img src="ans1-3.png" alt="answer1  part 3">
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Question 2</h2></header>
+      <section class="question">
+        <p><b>CSS selector practice and web site structure: Go to the SDN Fun page on my website. We are going to use the developer tools and the DOM function document.QuerySelectorAll(css_selector_string) to test some selectors and look at document structure.</b></p>
+        <ol type="a">
+          <li>What is the CSS selector that you would use to select all the <code>&lt;code&gt;</code> elements? How many are there?</li>
+          <li>What is the CSS selector that you would use to select all the <code>&lt;code&gt;</code> elements contained in <code>&lt;pre&gt;</code> elements? How many are there? Are there more or less than above. Why?</li>
+          <li>What is the CSS selector that you would use to select all the <code>&lt;figure&gt;</code> elements? How many are there?</li>
+          <li>What is the CSS selector that you would use to select all the <code>&lt;img&gt;</code> elements? How many are there? Is this different from the above? Why?</li>
+        </ol>
+      </section>
+      <section class="answer">
+        <ol type="a">
+          <li><img src="ans2-a.png" alt="Answer 2(a)"><br>There are 106 <code>&lt;code&gt;</code> elements as shown in the image with NodeList(106).</li>
+          <li><img src="ans2-b.png" alt="Answer 2(b)">There are 36 <code>&lt;code&gt;</code> elements contained in <code>&lt;pre&gt;</code> elements which is less than 106. Since we are only counting elements in the <code>&lt;pre&gt;</code> elements whereas before we counted all the <code>&lt;code&gt;</code> elements in the page.</li>
+          <li><img src="ans2-c.png" alt="Answer 2(c)"><br>There are 5 <code>&lt;figure&gt;</code> elements as shown in the image with NodeList(5).</li>
+          <li><img src="ans2-d.png" alt="Answer 2(d)"><br>There are 6 <code>&lt;img&gt;</code> elements as shown in the image with NodeList(6) whereas there as 5 <code>&lt;figure&gt;</code> elements. It is different because the <code>&lt;img&gt;</code> element represents an image and the <code>&lt;figure&gt;</code> element represents a unit of content with a caption mostly. Images are referenced to the HTML page whereas figure is a part of the document.</li>
+        </ol>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Question 3</h2></header>
+      <section class="question">
+        <b>JavaScript DOM practice: Go to the <a href="https://www.grotto-networking.com/patents.html">patent page</a> on my website. Using JavaScript in the developer console do the following:</b>
+        <ol type="a">
+        <li>Find the number of patents on the page and put the number into a JavaScript variable with a name of your choosing. Hint each patent is in its own paragraph with <code>class="patent"</code> Take a screen shot of your code and use that as an answer.</li>
+        <li>Figure out how to get the title as a plain JavaScript string for any patent on the page. Show your method works with the 33rd patent listed. Take a screen shot of your code and answer. Hint each patent’s title is in a span element with <code>class=Title</code> and you can get content from a DOM element via the <code>innerHTML</code> and <code>outerHTML</code> properties.</li>
+        </ol>
+      </section>
+      <section class="answer">
+        <ol type="a">
+          <li><img src="ans3-a.png" alt="Answer 3(a)"></li>
+          <li><img src="ans3-b.png" alt="Answer 3(b)">The 33rd element has index 32. So I displayed the title using index 32 with both innerHTML and outerHTML.</li>
+        </ol>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Question 4</h2></header>
+      <section class="question">
+        <b>Explain what the DOM is in your own words and how it relates to an HTML page and why it might differ.</b>
+      </section>
+      <section class="answer">
+        <p>DOM or Document Object Model is created by the browser when the web page is loaded. With the help of DOM, JavaScript can change the contents of the HTML page dynamically, debugging can be done on the browser itself. HTML elements, its attributes, CSS style all can be changed or created dynamically. DOM serves as an interface to HTML. Whereas HTML is not dynamic but static. HTML is used to create the web pages, and DOM is used to change/add contents to it dynamically.</p>
+      </section>
+    </section>
+
+
+  </main>
+</body>
+</html>
