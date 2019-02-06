@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- html is the "root" element it can have
+     one "head" and one "body" element -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Questions and Answers for Week 1</title>
+  <!-- I couldn't help it, it was just too ugly without
+    a little style. -->
+  <style>
+  h1 {
+    font-family:sans-serif;
+    text-align: center;
+  }
+  main {
+    margin: 2em;
+    border: purple 20px solid;
+    padding: 1em;
+    background-color: white;
+  }
+  body {
+      background-color: #cde2f5;
+  }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <header><h1>Week #1 Questions and Answers</h1></header>
+    <section>
+      <header><h2>HTML Question</h2></header>
+      <section class="question">
+        <p><b>What is the difference between !DOCTYPE html tag and html tag? how many html tags can be there in one document?</b></p>
+      </section>
+      <section class="answer">
+        <p>!DOCTYPE html tag is used to specify the version of html we want to use. By providing this tag, we tell the browser that we are using HTML5. While html tag works as a container. All the html code must be inside html tag, so there can only be one html tag.</p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>CSS Question</h2></header>
+      <section class="question">
+        <p><b>Types in which CSS can be integrated and which one do you prefer?</b></p>
+      </section>
+      <section class="answer">
+        <p>There are 3 ways in which CSS can be integrated:</p>
+        <ul>
+          <li>Inline: Style attribute applied to HTML elements individually</li>
+          <li>Embedded: Style attribute applied in the head element of the document</li>
+          <li>Imported: Link is provided to the external file containing the style</li>
+        </ul>
+        <p>When we want to apply style to particular element <b>Inline style</b> can be useful but usually it is tiring process and the website turns out to be non symmetrical and not good looking.<br>
+          When there is only one page to style, <b>Embedded</b> can be useful. But if we want to apply same style to multiple pages, this technique fails.<br>
+        When we have a big website to style in similar way, <b>Imported</b> is very useful. We just need to provide the link to the file in our html document instead of adding same style to every html document.</p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Website Structure Question 1</h2></header>
+      <section class="question">
+        <b>Should there be menu bar in the website?</b>
+      </section>
+      <section class="answer">
+        There should be a menu bar right under the restaurant's name consisting of different kind of menus, home delivery option, order online which would be connected to the respective pages via <b>a href</b>. It can be applied via navigation bar tag <b>nav</b>.
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Website Structure Question 2</h2></header>
+      <section class="question">
+        <b>What should be there in the footer and how is it applied?</b>
+      </section>
+      <section class="answer">
+        The footer should contain the address, contact info, open hours and copyright. It is applied outside the <b>body</b> and <b>main</b> tag in a different <b>section</b> under <b>footer</b> tag.
+      </section>
+    </section>
+
+
+  </main>
+</body>
+</html>
