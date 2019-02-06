@@ -1,0 +1,16 @@
+{
+  "name": "QuizServer",
+  "version": "1.0.1",
+  "description": "A sample server to try fetch",
+  "main": "QuizServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nedb": "^1.8.0"
+  }
+}
